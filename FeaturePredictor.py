@@ -315,6 +315,8 @@ class feature_predictor():
             var_b = MSE*(np.linalg.inv(np.dot(newX.T,newX)).diagonal())
             sd_b = np.sqrt(var_b)
             ts_b = params/sd_b
+            #p_values =[2*(1-stats.t.cdf(np.abs(i),(len(newX)-len(newX[0])))) for i in ts_b]
+            
             '''
             import statsmodels.api as sm
             X2 = sm.add_constant(self.x)
