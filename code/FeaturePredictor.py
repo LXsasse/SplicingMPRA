@@ -408,7 +408,9 @@ if __name__ == '__main__':
     
     if '--combine_train_and_val' in sys.argv:
         trainset = np.append(trainset, valset)
-    
+    else:
+        testset = valset
+        
     # define model specifics
     if '--model_params' in sys.argv:
         modeltype = sys.argv[sys.argv.index('--model_params')+1]
