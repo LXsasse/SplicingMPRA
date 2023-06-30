@@ -408,7 +408,7 @@ if __name__ == '__main__':
     
     if '--combine_train_and_val' in sys.argv:
         trainset = np.append(trainset, valset)
-    else:
+    elif '--hyperpar_optimization':
         testset = valset
         
     # define model specifics
