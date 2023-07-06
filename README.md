@@ -6,7 +6,7 @@ Linear models were trained as defined in `run_linear.sh`
 
 Data processing was performed as in `run_data_processing.sh`
 
-CNN models were trained as described in `run_cnns.sh`
+CNN models were trained as described in `run_cnns.sh` (Code needs to be downloaded from https://github.com/LXsasse/DRG/)
 
 ## Results
 To determine sequence patterns in the random mRNA element (N50) that influence splicing efficiency (SE), we applied five different convolutional neural network (CNN) architectures with sequence-structure inputs of various lengths (Methods). To train  and evaluate these models, we selected 140,017 sequence-SE pairs that showed high concordance between replicates. We trained all models on the mean efficiency from the two replicates. We trained on 80% of the sequence-SE pairs, validated on another 10%, and tested performance on the left-out 10%. 
