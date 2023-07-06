@@ -1,5 +1,7 @@
 #!/bin/bash
 
+##### Download code from https://github.com/LXsasse/DRG/ ######
+
 infile=$1
 jobid=$2
 
@@ -19,7 +21,7 @@ ctrl=Models/${jobid}_out${NOW}.txt
 echo $NOW > $ctrl
 echo 'INFILE : '${infile} >> $ctrl
 
-codedir=/path_to_your_code/
+codedir=/path_to_code_directory/DRG/
 
 # regCNN
 echo '++++++++++ regression CNN +++++++++' >> $ctrl
